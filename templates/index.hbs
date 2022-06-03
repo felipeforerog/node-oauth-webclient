@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <h1>Autenticación OAuth2 con OTDS</h1>
+        <div class="main-content">
+            <form id="oauthForm">
+                <table>
+                    <tr><td><label>Grant Type:</label></td><td><input id="gt" type="text" value="{{grantType}}" size="50"></td></tr>
+                    <tr><td><label>Client ID:</label></td><td><input id="cid" type="text" value="{{clientID}}" size="50"></td></tr>
+                    <tr><td><label>Client Secret:</label></td><td><input id="cs" type="text" value="{{clientSecret}}" size="50"></td></tr>
+                    <tr><td><label>Subject Token:</label></td><td><input id="st" type="text" value="{{subjectToken}}" size="50"></td></tr>
+                    <tr><td><label>Subject Token Type:</label></td><td><input id="stt" type="text" value="{{subjectTokenType}}" size="50"></td></tr>
+                    <tr><td colspan="2" align="right"><button id="btn1">Obtener token</button></td></tr>
+                </table>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <label>Obtención de token:</label><br>
+            <pre><code id="tokenR">...</code></pre>
+        </div>
+        <div>
+            <label>access_token:</label><br>
+            <textarea id="token" rows="20" cols="72">...</textarea>
+        </div>
+        <script src="/js/form.js"></script>
+        <hr>
+    </body>
+</html>

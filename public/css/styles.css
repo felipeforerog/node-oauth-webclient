@@ -1,0 +1,26 @@
+h1 {
+    color:blue;
+    font-family: Arial;
+}
+
+label {
+    font-family: Arial;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
+
+button:hover {
+    border: 1px solid #555555;
+    background: #555555;
+  }
