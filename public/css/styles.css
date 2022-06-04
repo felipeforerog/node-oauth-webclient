@@ -2,25 +2,27 @@ h1 {
     color:blue;
     font-family: Arial;
 }
-
 label {
     font-family: Arial;
 }
-
 input {
     border: 1px solid #cccccc;
     padding: 8px;
 }
-
-button {
+.btnForm {
     cursor: pointer;
     border: 1px solid #888888;
     background: #888888;
     color: white;
     padding: 8px;
 }
-
-button:hover {
+.btnForm_hover:hover {
     border: 1px solid #555555;
     background: #555555;
-  }
+}
+.btnForm_disabled {
+    border: 1px solid #cccccc;
+    background: white;
+    cursor: default;
+    color: #555555;
+}

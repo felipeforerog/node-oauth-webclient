@@ -29,7 +29,6 @@ app.get('', (req, res) => {
 app.get('/auth', (req, res) => {
     const queryData = req.query
     if(!queryData.otds || !queryData.gt || !queryData.cid || !queryData.cs || !queryData.st || !queryData.stt){
-        console.log(queryData)
         console.log("Parametros OAuth obligatorios...")
         res.send( {error:'Parametros OAuth obligatorios...'} )
         return
