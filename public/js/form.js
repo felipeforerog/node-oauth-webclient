@@ -16,7 +16,7 @@ oauthForm.addEventListener('submit', (event) => {
         return alert('Los 5 datos son obligatorios!')
     }
 
-    fetch(`http://localhost:3000/auth?gt=${gt}&cid=${cid}&cs=${cs}&st=${st}&stt=${stt}`).then((response) => {
+    fetch(`/auth?gt=${gt}&cid=${cid}&cs=${cs}&st=${st}&stt=${stt}`).then((response) => {
         response.json().then((data) => {
             if(data.error){
                 console.log(data.error)

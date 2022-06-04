@@ -7,7 +7,8 @@ const datosIni = require('./services/datos')
 
 //crea instancia de aplicacion
 const app = express()
-
+//heroku port
+const port = process.env.PORT || 3000
 
 //configuraciones adicionales de express
     //path de vistas hbs
@@ -55,7 +56,7 @@ app.get('*', (req, res) => {
 
 
 //arranca el servicio
-app.listen(3000, () =>{
-    console.log('Server is up on port 3000')
+app.listen(port, () =>{
+    console.log('Server is up on port '+port)
 })
 
